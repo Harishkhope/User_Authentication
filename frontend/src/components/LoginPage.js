@@ -19,7 +19,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://userauthentication-ciwu.onrender.com', loginData);
+      const response = await axios.post('https://userauthentication-ciwu.onrender.com/login', loginData);
       const { success, message } = response.data;
 
       if (success) {

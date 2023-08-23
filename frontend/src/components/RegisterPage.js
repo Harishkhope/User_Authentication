@@ -23,7 +23,7 @@ const RegistrationPage = () => {
   const handleRegistrationSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://userauthentication-ciwu.onrender.com', registrationData);
+      const response = await axios.post('https://userauthentication-ciwu.onrender.com/register', registrationData);
       console.log(response.data);
       alert("Registration Done!");
     }
